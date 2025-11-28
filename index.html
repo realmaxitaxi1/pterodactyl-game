@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survive the Extinction!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="screen">
+            <h1>Survive the Extinction!</h1>
+            <p>Use UP and DOWN arrows to move</p>
+            <p>Press SPACE to start</p>
+            <div id="leaderboardStart" class="leaderboard"></div>
+        </div>
+        <div id="nameInputScreen" class="screen hidden">
+            <h2>Enter Your Name</h2>
+            <div class="name-input-container">
+                <label for="firstNameInput">First Name:</label>
+                <input type="text" id="firstNameInput" maxlength="20" placeholder="John">
+                <label for="lastInitialInput">Last Initial:</label>
+                <input type="text" id="lastInitialInput" maxlength="1" placeholder="D">
+            </div>
+            <p>Press ENTER to start</p>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>Game Over!</h1>
+            <p>Score: <span id="finalScore">0</span></p>
+            <p>Wave Reached: <span id="finalWave">0</span></p>
+            <p>Press SPACE to restart</p>
+            <div id="leaderboardGameOver" class="leaderboard"></div>
+        </div>
+        <div id="scoreDisplay">Score: 0 | Wave: 1</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+
